@@ -13,3 +13,6 @@ A responsive, high-DPI compatible color picker built with Vanilla JS and HTML5 C
 ## Setup
 1. Clone the repo.
 2. Open `index.html` or `colorPicker.html` in your browser.
+
+## Example 
+<img width="393" height="831" alt="Screenshot 2025-11-25 202626" src="https://github.com/user-attachments/assets/0ca7d182-1e4f-412b-b342-caf9003648a7" />
