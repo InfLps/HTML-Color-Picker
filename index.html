@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Advanced Color Picker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="picker-layout">
+        
+        <div class="top-section">
+            <div class="canvas-wrapper" id="hueContainer">
+                <canvas id="hueSVCanvas"></canvas>
+            </div>
+            <div class="canvas-wrapper" id="alphaContainer">
+                <canvas id="alphaCanvas"></canvas>
+            </div>
+        </div>
+
+        <div class="sliders-section">
+            <div class="section-title">RGB Sliders</div>
+            <div class="canvas-wrapper rgb-wrapper" id="rgbContainer">
+                <canvas id="rgbCanvas"></canvas>
+            </div>
+        </div>
+
+        <div class="value-display">
+            <div class="value-item">
+                <div class="value-label">R</div>
+                <div class="value-number" id="rValue">255</div>
+            </div>
+            <div class="value-item">
+                <div class="value-label">G</div>
+                <div class="value-number" id="gValue">0</div>
+            </div>
+            <div class="value-item">
+                <div class="value-label">B</div>
+                <div class="value-number" id="bValue">0</div>
+            </div>
+            <div class="value-item">
+                <div class="value-label">A</div>
+                <div class="value-number" id="aValue">1.00</div>
+            </div>
+        </div>
+
+        <div class="presets-section">
+            <div class="section-title">Color Presets</div>
+            <div class="presets-grid" id="presetsGrid">
+                </div>
+        </div>
+
+        <div class="result-row">
+            <div class="preview-circle">
+                <div id="previewInner"></div>
+            </div>
+            <div id="colorText">rgba(255, 0, 0, 1.00)</div>
+        </div>
+
+        <div class="controls-section">
+            <div class="format-selector">
+                <button class="format-btn active" data-format="rgba">RGBA</button>
+                <button class="format-btn" data-format="hex">HEX</button>
+                <button class="format-btn" data-format="hsla">HSLA</button>
+            </div>
+            <div class="action-buttons">
+                <button class="action-btn" id="copyBtn">Copy</button>
+                <button class="action-btn" id="randomBtn">Random</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="footer-text">InfLps (2025)</div>
+    <script src="js/script.js"></script>
+</body>
+</html>
